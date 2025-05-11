@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import menu from "./data/menu.json";
+import specialData from "./data/todays-special.json";
 import Header from "./components/Header";
 import MenuSection from "./components/MenuSection";
 import Review from "./components/Review";
@@ -8,11 +9,29 @@ import OrderingModel from "./components/OrderingModel";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
 import AnimatedImage from "./components/AnimatedImage";
+import SpecialModal from "./components/SpecialModal";
 
 function App() {
+  const [showSpecial, setShowSpecial] = useState(false);
+  
+  useEffect(() => {
+    // Check URL parameters when component mounts
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasSpecialParam = urlParams.get('special') === 'true';
+    
+    // Only show special if it exists and URL parameter is present
+    if (hasSpecialParam && specialData.hasSpecial) {
+      setShowSpecial(true);
+      
+      // Update URL without the parameter but maintain history
+      const newUrl = window.location.pathname;
+      window.history.pushState({}, '', newUrl);
+    }
+  }, []); // Empty dependency array means this runs once on mount
+
   return (
     <div>
-      <Header />
+      <Header onSpecialClick={() => setShowSpecial(true)} />
       <div className="main-content" style={{ display: "flex", gap: 32, padding: 32 }}>
         {/* Left Column */}
         <div style={{ flex: 1, minWidth: 350 }}>
@@ -54,6 +73,13 @@ function App() {
         </div>
       </div>
       <Footer />
+      
+      {showSpecial && specialData.hasSpecial && (
+        <SpecialModal 
+          special={specialData.special} 
+          onClose={() => setShowSpecial(false)} 
+        />
+      )}
     </div>
   );
 }

@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import specialData from "../data/todays-special.json";
-import SpecialModal from "./SpecialModal";
 
-export default function Header() {
-  const [showSpecial, setShowSpecial] = useState(false);
+export default function Header({ onSpecialClick }) {
   const hasSpecial = specialData.hasSpecial;
 
   const handleContact = () => {
@@ -16,20 +14,13 @@ export default function Header() {
       <nav className="nav">
         <button 
           className={`special-btn ${!hasSpecial ? 'disabled' : ''}`}
-          onClick={() => hasSpecial && setShowSpecial(true)}
+          onClick={() => hasSpecial && onSpecialClick()}
           disabled={!hasSpecial}
         >
           Today's Special
         </button>
         <button className="order-btn" onClick={handleContact}>Contact</button>
       </nav>
-
-      {showSpecial && (
-        <SpecialModal 
-          special={specialData.special} 
-          onClose={() => setShowSpecial(false)} 
-        />
-      )}
     </header>
   );
 }
