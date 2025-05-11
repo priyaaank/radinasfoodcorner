@@ -1,14 +1,14 @@
 {
   "hasSpecial": true,
   "special": {
-    "title": "Mango Cheesecake",
-    "description": "A heavenly fusion of fresh Alphonso mangoes and creamy cheesecake. Made with real cream cheese, topped with mango coulis and fresh mango chunks. Limited edition summer special!",
+    "title": "Blueberry Cheesecake",
+    "description": "A heavenly fusion of fresh Fresh Blueberries and creamy cheesecake. Made with real cream cheese, topped with fresh blueberry chunks. Limited edition summer special!",
     "image": "/images/cheesecake.jpg",
     "totalPlates": 20,
     "price": "₹ 280.00",
     "isOrderingOpen": true,
-    "orderingClosesAt": "12 Jan 25, 4:00 PM",
-    "allergens": ["dairy", "nuts"],
-    "dietaryInfo": "Vegetarian"
+    "orderingClosesAt": "18 May 25, 4:00 PM",
+    "allergens": ["dairy", "nuts", "Eggs"],
+    "dietaryInfo": "Eggetarian"
   }
 } 
