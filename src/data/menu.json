@@ -2,7 +2,7 @@
   "categories": {
     "bakes": {
       "displayName": "Bakes & Desserts",
-      "image": "/images/cookie.jpg",
+      "image": "/images/bakesCategory.jpg",
       "description": "Sweet endings",
       "items": [
         { "name": "Portobello Mushroom Burger", "price": "₹ 220.00" },
@@ -15,7 +15,7 @@
     },
     "snacks": {
       "displayName": "Snacks",
-      "image": "/images/cookie.jpg",
+      "image": "/images/snackscategory.jpg",
       "description": "Perfect accompaniments",
       "items": [
         { "name": "House-made Lemonade", "price": "₹ 220.00" },
@@ -28,7 +28,7 @@
     },
     "streetfood": {
       "displayName": "Street-Food",
-      "image": "/images/sides.jpg",
+      "image": "/images/streetfoodcategory.jpg",
       "description": "Authentic savory taste",
       "items": [
         { "name": "Avocado and Tomato Salad", "price": "₹ 220.00" },
@@ -39,7 +39,7 @@
     },
     "beverages": {
       "displayName": "Beverages/Coolers",
-      "image": "/images/desserts.jpg",
+      "image": "/images/aamras.JPG",
       "description": "Refreshing with every sip",
       "items": [
         { "name": "Warm Apple Crisp", "price": "₹ 220.00" },
@@ -50,10 +50,30 @@
     }
   },
   "otherImages": {
-    "main": "/images/restaurant-main.jpg",
-    "interior": "/images/interior.jpg",
+    "proteinplate": "/images/proteinplate.jpg",
     "biscotti": "/images/biscotti.jpg",
-    "sides": "/images/sides.jpg",
-    "desserts": "/images/desserts.jpg"  
+    "biscotti2": "/images/biscotti2.jpg",
+    "brownies": "/images/brownies.jpg",
+    "darkChocolateBrownie": "/images/darkchocolatebrownie.jpg",
+    "cookie": "/images/cookie.jpg",
+    "oatmealCookie": "/images/oatmealcookie.JPG",
+    "cupcakes": "/images/cupcakes.jpg",
+    "cupcakesBunch": "/images/cupcakesbunch.JPG",
+    "chocoChunkCupcakes": "/images/chocochunkcupcakes.jpg",
+    "orangeCake": "/images/orangecake.JPG",
+    "cheesecake": "/images/cheesecake.jpg",
+    "strawberryCheesecake": "/images/strawberrycheesecake.JPG",
+    "vadaPav": "/images/vadapav.jpg",
+    "pavBhaji": "/images/pavbhaji.jpg",
+    "sabudanaWada": "/images/sabudanawada.jpg",
+    "aaluWadi": "/images/aaluwadi.JPG",
+    "springRolls": "/images/springrolls.JPG",
+    "sambarWadi": "/images/sambarwadi.jpg",
+    "momos": "/images/momos.JPG",
+    "kachoriSoth": "/images/kachorisoth.JPG",
+    "dabeli": "/images/dabeli.jpg",
+    "keemaPav": "/images/keemapav.jpg",
+    "keemaPav2": "/images/keemapav2.jpg",
+    "aamras": "/images/aamras.JPG"
   }
 }

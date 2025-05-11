@@ -6,7 +6,6 @@ export default function Header() {
       <h1>Radina's Foodcorner</h1>
       <nav className="nav">
         <a href="#">Home</a>
-        <a href="#">Menu</a>
         <button className="order-btn">Contact</button>
       </nav>
     </header>

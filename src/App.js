@@ -26,6 +26,12 @@ function App() {
           <MenuSection category={menu.categories.bakes} />
           <Review />
           <MenuSection category={menu.categories.streetfood} />
+          <div style={{ display: "flex", gap: 16, margin: "24px 0" }}>
+            <img src={menu.otherImages.dabeli} alt="Choco Chunk Cookie" style={{ width: "24%" }} />
+            <img src={menu.otherImages.oatmealCookie} alt="Biscotti" style={{ width: "24%" }} />
+            <img src={menu.otherImages.springRolls} alt="Restaurant Ambiance" style={{ width: "24%" }} />
+            <img src={menu.otherImages.pavBhaji} alt="Choco Chunk Cookie" style={{ width: "23%" }} />
+          </div>
         </div>
         {/* Right Column */}
         <div style={{ flex: 1.2, minWidth: 350 }}>
@@ -34,9 +40,9 @@ function App() {
           </h2>
           <MenuSection category={menu.categories.snacks} />
           <div style={{ display: "flex", gap: 16, margin: "24px 0" }}>
-            <img src={menu.categories.snacks.image} alt="Choco Chunk Cookie" style={{ width: "33%" }} />
-            <img src={menu.otherImages.biscotti} alt="Biscotti" style={{ width: "33%" }} />
-            <img src={menu.otherImages.interior} alt="Restaurant Ambiance" style={{ width: "33%" }} />
+            <img src={menu.otherImages.strawberryCheesecake} alt="Choco Chunk Cookie" style={{ width: "33%" }} />
+            <img src={menu.otherImages.darkChocolateBrownie} alt="Biscotti" style={{ width: "33%" }} />
+            <img src={menu.otherImages.biscotti} alt="Restaurant Ambiance" style={{ width: "33%" }} />
           </div>
           <MenuSection category={menu.categories.beverages} />
           <Location />
