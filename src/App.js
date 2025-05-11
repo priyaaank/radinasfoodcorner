@@ -26,7 +26,7 @@ function App() {
     { src: menu.otherImages.strawberryCheesecake, alt: "Strawberry Cheesecake", text: "Strawberry Cheesecake" },
     { src: menu.otherImages.darkChocolateBrownie, alt: "Dark Chocolate Brownie", text: "Dark Chocolate Brownie" },
     { src: menu.otherImages.biscotti, alt: "Biscotti", text: "Biscotti" },
-    { src: menu.otherImages.generic, alt: "Restaurant Interior", text: "Welcome to Radina's Foodcorner" }
+    { src: menu.otherImages.cupcakes, alt: "Choco Chunk Cupcakes", text: "Choco Chunk Cupcakes" }
   ];
   
   useEffect(() => {
