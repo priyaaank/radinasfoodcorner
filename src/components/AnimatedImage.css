@@ -1,0 +1,41 @@
+.animated-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.animated-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.animated-image.hovered {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  color: white;
+}
+
+.image-overlay.visible {
+  transform: translateY(0);
+}
+
+.image-overlay p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+} 
