@@ -343,9 +343,19 @@
     transform-origin: left;
   }
   
+  .main-content {
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
   @media (max-width: 900px) {
     .main-content {
       flex-direction: column;
+      padding: 24px;
+      gap: 24px;
     }
     
     .header {
@@ -374,22 +384,17 @@
   }
 
   @media (max-width: 480px) {
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    
-    .header {
-      padding: 12px 16px;
-    }
-    
-    .order-btn {
-      padding: 8px 20px;
-      font-size: 1rem;
+    .main-content {
+      padding: 16px;
+      gap: 16px;
     }
 
-    .special-btn {
-      padding: 8px 20px;
-      font-size: 1rem;
+    .card {
+      margin-bottom: 16px;
+    }
+
+    .header {
+      padding: 12px 16px;
     }
 
     .nav {
