@@ -113,9 +113,37 @@ DISTRIBUTION_CONFIG=$(cat <<EOF
             }
         },
         "MinTTL": 0,
-        "DefaultTTL": 86400,
-        "MaxTTL": 31536000,
+        "DefaultTTL": 3600,
+        "MaxTTL": 86400,
         "Compress": true
+    },
+    "CacheBehaviors": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "PathPattern": "*.jpg|*.jpeg|*.png|*.gif|*.webp",
+                "TargetOriginId": "S3Origin",
+                "ViewerProtocolPolicy": "redirect-to-https",
+                "AllowedMethods": {
+                    "Quantity": 2,
+                    "Items": ["GET", "HEAD"],
+                    "CachedMethods": {
+                        "Quantity": 2,
+                        "Items": ["GET", "HEAD"]
+                    }
+                },
+                "ForwardedValues": {
+                    "QueryString": false,
+                    "Cookies": {
+                        "Forward": "none"
+                    }
+                },
+                "MinTTL": 0,
+                "DefaultTTL": 3600,
+                "MaxTTL": 86400,
+                "Compress": true
+            }
+        ]
     },
     "CustomErrorResponses": {
         "Quantity": 1,

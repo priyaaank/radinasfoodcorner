@@ -43,10 +43,27 @@ jobs:
 
       - name: Deploy to S3
         run: |
+          # Deploy images with shorter cache duration
           aws s3 sync build/ s3://${{ env.S3_BUCKET }} \
             --delete \
-            --cache-control "max-age=31536000,public" \
-            --exclude "index.html"
+            --exclude "*" \
+            --include "*.jpg" \
+            --include "*.jpeg" \
+            --include "*.png" \
+            --include "*.gif" \
+            --include "*.webp" \
+            --cache-control "max-age=86400,public" # 24 hours for images
+
+          # Deploy other static assets with longer cache
+          aws s3 sync build/ s3://${{ env.S3_BUCKET }} \
+            --delete \
+            --exclude "*.jpg" \
+            --exclude "*.jpeg" \
+            --exclude "*.png" \
+            --exclude "*.gif" \
+            --exclude "*.webp" \
+            --exclude "index.html" \
+            --cache-control "max-age=31536000,public"
 
       - name: Deploy index.html with no-cache
         run: |
@@ -58,9 +75,10 @@ jobs:
       - name: Invalidate CloudFront cache
         if: env.CLOUDFRONT_DISTRIBUTION_ID != ''
         run: |
+          # Invalidate both the root and all images
           aws cloudfront create-invalidation \
             --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
+            --paths "/*" "/static/*" "/*.jpg" "/*.jpeg" "/*.png" "/*.gif" "/*.webp"
 
       - name: Deployment Status
         run: |
