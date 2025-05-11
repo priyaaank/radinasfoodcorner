@@ -3,6 +3,8 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .animated-image {
@@ -27,6 +29,10 @@
   transform: translateY(100%);
   transition: transform 0.4s ease;
   color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 30%;
 }
 
 .image-overlay.visible {
@@ -38,4 +44,5 @@
   font-size: 1rem;
   line-height: 1.4;
   text-align: center;
+  width: 100%;
 } 

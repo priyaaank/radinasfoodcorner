@@ -10,9 +10,24 @@ import Location from "./components/Location";
 import Footer from "./components/Footer";
 import AnimatedImage from "./components/AnimatedImage";
 import SpecialModal from "./components/SpecialModal";
+import ImageGrid from "./components/ImageGrid";
 
 function App() {
   const [showSpecial, setShowSpecial] = useState(false);
+  
+  const foodImages = [
+    { src: menu.otherImages.dabeli, alt: "Dabeli", text: "Dabeli" },
+    { src: menu.otherImages.oatmealCookie, alt: "Oatmeal Cookie", text: "Oatmeal Cookie" },
+    { src: menu.otherImages.springRolls, alt: "Spring Rolls", text: "Spring Rolls" },
+    { src: menu.otherImages.pavBhaji, alt: "Pav Bhaji", text: "Pav Bhaji" }
+  ];
+
+  const dessertImages = [
+    { src: menu.otherImages.strawberryCheesecake, alt: "Strawberry Cheesecake", text: "Strawberry Cheesecake" },
+    { src: menu.otherImages.darkChocolateBrownie, alt: "Dark Chocolate Brownie", text: "Dark Chocolate Brownie" },
+    { src: menu.otherImages.biscotti, alt: "Biscotti", text: "Biscotti" },
+    { src: menu.otherImages.generic, alt: "Restaurant Interior", text: "Welcome to Radina's Foodcorner" }
+  ];
   
   useEffect(() => {
     // Check URL parameters when component mounts
@@ -32,7 +47,7 @@ function App() {
   return (
     <div>
       <Header onSpecialClick={() => setShowSpecial(true)} />
-      <div className="main-content" style={{ display: "flex", gap: 32, padding: 32 }}>
+      <div className="main-content">
         {/* Left Column */}
         <div style={{ flex: 1, minWidth: 350 }}>
           <div className="card">
@@ -50,12 +65,7 @@ function App() {
           <MenuSection category={menu.categories.bakes} />
           <Review />
           <MenuSection category={menu.categories.streetfood} />
-          <div style={{ display: "flex", gap: 16, margin: "24px 0" }}>
-            <AnimatedImage src={menu.otherImages.dabeli} alt="Dabeli" text="Dabeli" style={{ width: "24%" }} />
-            <AnimatedImage src={menu.otherImages.oatmealCookie} alt="Oatmeal Cookie" text="Oatmeal Cookie" style={{ width: "24%" }} />
-            <AnimatedImage src={menu.otherImages.springRolls} alt="Spring Rolls" text="Spring Rolls" style={{ width: "24%" }} />
-            <AnimatedImage src={menu.otherImages.pavBhaji} alt="Pav Bhaji" text="Pav Bhaji" style={{ width: "23%" }} />
-          </div>
+          <ImageGrid images={foodImages} />
         </div>
         {/* Right Column */}
         <div style={{ flex: 1.2, minWidth: 350 }}>
@@ -63,11 +73,7 @@ function App() {
             Crafting Love-Filled Plates with Premium, Healthy, Sustainable Ingredients
           </h2>
           <MenuSection category={menu.categories.snacks} />
-          <div style={{ display: "flex", gap: 16, margin: "24px 0" }}>
-            <AnimatedImage src={menu.otherImages.strawberryCheesecake} alt="Strawberry Cheesecake" text="Strawberry Cheesecake" style={{ width: "33%" }} />
-            <AnimatedImage src={menu.otherImages.darkChocolateBrownie} alt="Dark Chocolate Brownie" text="Dark Chocolate Brownie" style={{ width: "33%" }} />
-            <AnimatedImage src={menu.otherImages.biscotti} alt="Biscotti" text="Biscotti" style={{ width: "33%" }} />
-          </div>
+          <ImageGrid images={dessertImages} />
           <MenuSection category={menu.categories.beverages} />
           <Location />
         </div>
