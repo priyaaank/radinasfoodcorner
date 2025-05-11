@@ -10,6 +10,20 @@ export default function SpecialModal({ special, onClose }) {
     window.open(whatsappUrl, '_blank');
   };
 
+  const handleShare = () => {
+    const websiteUrl = 'https://radinasfoodcorner.com';
+    const shareText = `🌟 Today's Special at Radina's Foodcorner!\n\n` +
+      `${special.title} - ${special.price}\n` +
+      `${special.description}\n\n` +
+      `Limited to ${special.totalPlates} plates only!\n` +
+      `Orders open until ${special.orderingClosesAt}\n\n` +
+      `Check it out here: ${websiteUrl}?special=true\n\n` +
+      `#RadinasFoodcorner #TodaysSpecial #FoodieHeaven`;
+
+    const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    window.open(whatsappShareUrl, '_blank');
+  };
+
   return (
     <div className="special-modal-overlay" onClick={onClose}>
       <div className="special-modal" onClick={e => e.stopPropagation()}>
@@ -55,11 +69,16 @@ export default function SpecialModal({ special, onClose }) {
               )}
             </div>
 
-            {special.isOrderingOpen && (
-              <button className="order-special-btn" onClick={handleOrder}>
-                Order on WhatsApp
+            <div className="special-actions">
+              {special.isOrderingOpen && (
+                <button className="order-special-btn" onClick={handleOrder}>
+                  Order on WhatsApp
+                </button>
+              )}
+              <button className="share-special-btn" onClick={handleShare}>
+                Share on WhatsApp
               </button>
-            )}
+            </div>
           </div>
         </div>
       </div>

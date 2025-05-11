@@ -167,6 +167,31 @@
   box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
 }
 
+.special-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.share-special-btn {
+  background: #E0E0E0;
+  color: var(--text-main);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-special-btn:hover {
+  background: #D0D0D0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .special-modal-content {
     flex-direction: column;
@@ -174,5 +199,9 @@
   
   .special-image-container {
     height: 300px;
+  }
+
+  .special-actions {
+    gap: 8px;
   }
 } 
