@@ -1,6 +1,6 @@
 # H1 File Updates
 
-* Update [Menu][Update this file](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/menu.json)
+* Update [Menu](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/menu.json)
 * Update [Reviews](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/reviews.json)
 * Update [Today's Special](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/todays-special.json)
 
