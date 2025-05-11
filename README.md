@@ -1,4 +1,11 @@
-To setup the HTTPS and WebSite
+# H1 File Updates
+
+Update [Menu][Update this file](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/menu.json)
+Update [Reviews](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/reviews.json)
+Update [Today's Special](https://github.com/priyaaank/radinasfoodcorner/blob/main/src/data/todays-special.json)
+
+
+# H1 Technical Setup
 
 ## Command to setup S3 Bucket
  sh setup-s3-bucket.sh radinasfoodcorner ap-south-1
