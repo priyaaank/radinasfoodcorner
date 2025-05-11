@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Location() {
   return (
-    <div className="location card">
-      <strong>CONTACT</strong>
-      <div>Radina - 9545966155</div>
-      <div><a href="https://wa.me/919545966155">Whatsapp</a></div>
-      <div><a href="mailto:hello@radinasfoodcorner.com">Email us</a></div>
-      <div><a href="https://maps.app.goo.gl/EFLhhQF4Hf6q1hiY6" target="_blank" rel="noreferrer">HSR Layout, Bangalore</a></div>
+    <div className="location">
+      <h2 className="location-title">LOCATION</h2>
+      <div className="location-detail">145 New street name</div>
+      <div className="location-detail">4530 City</div>
+      <div className="location-detail">Country</div>
+      <div className="location-detail">hello@radinasfoodcorner.com</div>
     </div>
   );
 }

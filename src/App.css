@@ -134,8 +134,38 @@
   }
   
   .location {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin-top: 24px;
+    color: var(--text-main);
+  }
+  
+  .location-title {
+    font-size: 2rem;
+    color: var(--accent-dark);
+    margin-bottom: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  
+  .location-detail {
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .location-detail::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--text-light);
+    opacity: 0.3;
+  }
+  
+  .location-detail:last-child::after {
+    display: none;
   }
   
   img {
