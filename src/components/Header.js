@@ -12,6 +12,12 @@ export default function Header({ onSpecialClick }) {
     <header className="header">
       <h1>Radina's Foodcorner</h1>
       <nav className="nav">
+        <a href="#" className="contact-link" onClick={(e) => {
+          e.preventDefault();
+          handleContact();
+        }}>
+          Contact
+        </a>
         <button 
           className={`special-btn ${!hasSpecial ? 'disabled' : ''}`}
           onClick={() => hasSpecial && onSpecialClick()}
@@ -19,7 +25,6 @@ export default function Header({ onSpecialClick }) {
         >
           Today's Special
         </button>
-        <button className="order-btn" onClick={handleContact}>Contact</button>
       </nav>
     </header>
   );
