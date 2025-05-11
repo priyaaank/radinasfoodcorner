@@ -7,7 +7,7 @@ export default function Location() {
       <div>Radina - 9545966155</div>
       <div><a href="https://wa.me/919545966155">Whatsapp</a></div>
       <div><a href="mailto:hello@radinasfoodcorner.com">Email us</a></div>
-      <div><a href="https://maps.app.goo.gl/EFLhhQF4Hf6q1hiY6" target="_blank">HSR Layout, Bangalore</a></div>
+      <div><a href="https://maps.app.goo.gl/EFLhhQF4Hf6q1hiY6" target="_blank" rel="noreferrer">HSR Layout, Bangalore</a></div>
     </div>
   );
 }
