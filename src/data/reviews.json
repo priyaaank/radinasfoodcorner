@@ -1,0 +1,29 @@
+{
+  "reviews": [
+    {
+      "text": "Absolutely love this place - the burgers are amazing and the atmosphere is so cozy and inviting!",
+      "author": "Chad G.P., Teah",
+      "rating": 5
+    },
+    {
+      "text": "The street food here is authentic and delicious. The dabeli and pav bhaji transport me straight back to Mumbai!",
+      "author": "Priya S., Bangalore",
+      "rating": 5
+    },
+    {
+      "text": "Best homemade biscotti I've ever had! The dark chocolate brownie is to die for.",
+      "author": "Meera R., HSR Layout",
+      "rating": 5
+    },
+    {
+      "text": "Such attention to detail in every dish. The monthly subscription is worth every penny!",
+      "author": "Rahul K., Koramangala",
+      "rating": 5
+    },
+    {
+      "text": "Their baked goods are consistently excellent. The cupcakes are my weekend treat!",
+      "author": "Sarah M., Indiranagar",
+      "rating": 5
+    }
+  ]
+} 

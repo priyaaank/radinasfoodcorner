@@ -122,6 +122,56 @@
     color: var(--accent-dark);
   }
   
+  .review-carousel {
+    text-align: center;
+  }
+  
+  .review-stars {
+    color: var(--accent-green);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .review-text {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .review-text strong {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .review-author {
+    font-size: 0.95rem;
+    margin-top: 16px;
+    color: var(--accent-dark);
+    font-style: italic;
+  }
+  
+  .review-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .review-dot.active {
+    opacity: 1;
+  }
+  
   .ordering-model {
     font-size: 0.95rem;
     margin-top: 12px;
