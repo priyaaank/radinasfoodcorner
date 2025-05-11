@@ -1,0 +1,178 @@
+.special-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.special-modal {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--text-light);
+  cursor: pointer;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-main);
+}
+
+.special-modal-content {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.special-image-container {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+}
+
+.special-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.special-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--accent-green);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.special-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.special-details h2 {
+  color: var(--accent-dark);
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 0 0 16px 0;
+}
+
+.special-description {
+  color: var(--text-main);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.special-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.special-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.special-status {
+  font-size: 0.9rem;
+}
+
+.status-open {
+  color: var(--accent-green);
+}
+
+.status-closed {
+  color: var(--button-red);
+}
+
+.special-info {
+  background: var(--primary-bg);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  margin-bottom: 24px;
+}
+
+.dietary-info, .allergens {
+  margin: 8px 0;
+  color: var(--text-main);
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.order-special-btn {
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.order-special-btn:hover {
+  background: #128C7E;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
+}
+
+@media (max-width: 768px) {
+  .special-modal-content {
+    flex-direction: column;
+  }
+  
+  .special-image-container {
+    height: 300px;
+  }
+} 
