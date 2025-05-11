@@ -7,9 +7,11 @@
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1000;
   padding: 20px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .special-modal {
@@ -19,6 +21,7 @@
   width: 100%;
   position: relative;
   animation: modalFadeIn 0.3s ease;
+  margin: auto;
 }
 
 @keyframes modalFadeIn {
@@ -148,6 +151,12 @@
   color: var(--accent-dark);
 }
 
+.special-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .order-special-btn {
   background: #25D366;
   color: white;
@@ -165,12 +174,6 @@
   background: #128C7E;
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
-}
-
-.special-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
 
 .share-special-btn {
@@ -193,15 +196,53 @@
 }
 
 @media (max-width: 768px) {
+  .special-modal-overlay {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .special-modal {
+    min-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
   .special-modal-content {
     flex-direction: column;
+    padding: 16px;
+    padding-top: 48px; /* Space for close button */
+    gap: 16px;
   }
   
   .special-image-container {
-    height: 300px;
+    height: 250px;
+    min-width: auto;
+  }
+
+  .special-details {
+    min-width: auto;
+  }
+
+  .special-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .special-description {
+    font-size: 1rem;
+  }
+
+  .special-price {
+    font-size: 1.2rem;
   }
 
   .special-actions {
-    gap: 8px;
+    position: sticky;
+    bottom: 0;
+    background: var(--card-bg);
+    padding: 16px;
+    margin: 0 -16px -16px -16px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
   }
 } 
