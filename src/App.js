@@ -16,7 +16,7 @@ function App() {
         {/* Left Column */}
         <div style={{ flex: 1, minWidth: 350 }}>
           <div className="card">
-            <img src={menu.otherImages.main} alt="Restaurant Interior" />
+            <img src={menu.otherImages.generic} alt="Restaurant Interior" />
             <h4>OUR FOOD</h4>
             <p>
             At Radina's Foodcorner, every dish begins with a simple promise: cook as if we're feeding the people we love most. That means hand-picking premium, locally sourced produce, then weaving them into time-honored recipes that nourish without compromise.
