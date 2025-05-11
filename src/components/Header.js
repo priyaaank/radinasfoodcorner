@@ -1,5 +1,5 @@
 import React from "react";
-import specialData from "../data/todays-special.json";
+import specialData from "../data/curated-special.json";
 
 export default function Header({ onSpecialClick }) {
   const hasSpecial = specialData.hasSpecial;
@@ -22,7 +22,7 @@ export default function Header({ onSpecialClick }) {
           onClick={() => hasSpecial && onSpecialClick()}
           disabled={!hasSpecial}
         >
-          Today's Special
+          Curated Special
         </button>
       </nav>
     </header>

@@ -12,13 +12,13 @@ export default function SpecialModal({ special, onClose }) {
 
   const handleShare = () => {
     const websiteUrl = 'https://radinasfoodcorner.com';
-    const shareText = `🌟 Today's Special at Radina's Foodcorner!\n\n` +
+    const shareText = `🌟 Curated Special at Radina's Foodcorner!\n\n` +
       `${special.title} - ${special.price}\n` +
       `${special.description}\n\n` +
       `Limited to ${special.totalPlates} plates only!\n` +
       `Orders open until ${special.orderingClosesAt}\n\n` +
       `Check it out here: ${websiteUrl}?special=true\n\n` +
-      `#RadinasFoodcorner #TodaysSpecial #FoodieHeaven`;
+      `#RadinasFoodcorner #CuratedSpecial #FoodieHeaven`;
 
     const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
     window.open(whatsappShareUrl, '_blank');

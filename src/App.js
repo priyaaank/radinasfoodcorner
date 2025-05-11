@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import menu from "./data/menu.json";
-import specialData from "./data/todays-special.json";
+import specialData from "./data/curated-special.json";
 import Header from "./components/Header";
 import MenuSection from "./components/MenuSection";
 import Review from "./components/Review";
