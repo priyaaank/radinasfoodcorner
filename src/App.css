@@ -8,7 +8,8 @@
     --text-main: #4e5c3a;
     --text-light: #7a9c5c;
     --border-radius: 12px;
-    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow: 0 4px 16px rgba(0,0,0,0.1);
+    --menu-shadow: 0 6px 24px rgba(122, 156, 92, 0.15);
   }
   
   body {
@@ -99,6 +100,16 @@
     box-shadow: var(--shadow);
     padding: 24px;
     margin-bottom: 24px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .menu-section {
+    box-shadow: var(--menu-shadow);
+    border: 1px solid rgba(122, 156, 92, 0.1);
+  }
+  
+  .menu-section:hover {
+    box-shadow: 0 8px 32px rgba(122, 156, 92, 0.2);
   }
   
   .menu-section h2 {
