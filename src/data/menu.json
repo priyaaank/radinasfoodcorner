@@ -5,12 +5,16 @@
       "image": "/images/bakesCategory.jpg",
       "description": "Sweet endings",
       "items": [
-        { "name": "Portobello Mushroom Burger", "price": "₹ 220.00" },
-        { "name": "Falafel Burger", "price": "₹ 220.00" },
-        { "name": "Fresh Salmon Burger", "price": "₹ 220.00" },
-        { "name": "Grilled Chicken Burger", "price": "₹ 220.00" },
-        { "name": "Classic Beef Burger", "price": "₹ 220.00" },
-        { "name": "Vegan Beyond Burger", "price": "₹ 220.00" }
+        { "name": "Strawberry cheesecake - 1 slice", "price": "₹ 220.00" },
+        { "name": "Blueberry cheesecake - 1 slice", "price": "₹ 220.00" },
+        { "name": "Orange tea-cake - 1 slice", "price": "₹ 220.00" },
+        { "name": "Oatmeal cookies - 4 pieces", "price": "₹ 220.00" },
+        { "name": "Choco chunk cupcake - 1 piece", "price": "₹ 220.00" },
+        { "name": "Choco chunk cookies - 1 piece", "price": "₹ 220.00" },
+        { "name": "Dark chocolate brownie - 1 piece", "price": "₹ 220.00" },
+        { "name": "Choco chip cupcake", "price": "₹ 220.00" },
+        { "name": "Almond biscotti", "price": "₹ 220.00" },
+        { "name": "Classic biscotti", "price": "₹ 220.00" }
       ]
     },
     "snacks": {
@@ -18,12 +22,12 @@
       "image": "/images/snackscategory.jpg",
       "description": "Perfect accompaniments",
       "items": [
-        { "name": "House-made Lemonade", "price": "₹ 220.00" },
-        { "name": "Sauvignon Blanc", "price": "₹ 220.00" },
-        { "name": "Pinot Noir", "price": "₹ 220.00" },
-        { "name": "Pilsner", "price": "₹ 220.00" },
-        { "name": "Amber Ale", "price": "₹ 220.00" },
-        { "name": "IPA", "price": "₹ 220.00" }
+        { "name": "Vada Paav - 1 piece", "price": "₹ 220.00" },
+        { "name": "Springroll - 2 pieces", "price": "₹ 220.00" },
+        { "name": "Sambarwadi - 2 pieces", "price": "₹ 220.00" },
+        { "name": "Momoms - 5 pieces", "price": "₹ 220.00" },
+        { "name": "Sabudana wada - 2 pieces", "price": "₹ 220.00" },
+        { "name": "Dabeli - 1 piece", "price": "₹ 220.00" }
       ]
     },
     "streetfood": {
@@ -31,10 +35,9 @@
       "image": "/images/streetfoodcategory.jpg",
       "description": "Authentic savory taste",
       "items": [
-        { "name": "Avocado and Tomato Salad", "price": "₹ 220.00" },
-        { "name": "Classic Caesar Salad", "price": "₹ 220.00" },
-        { "name": "Truffle Parmesan Fries", "price": "₹ 220.00" },
-        { "name": "Sweet Potato Fries", "price": "₹ 220.00" }
+        { "name": "Mutton Keema Pav", "price": "₹ 220.00" },
+        { "name": "Paav Bhaji - 2 Pav", "price": "₹ 220.00" },
+        { "name": "Mutton Biryani", "price": "₹ 220.00" }
       ]
     },
     "beverages": {
@@ -42,10 +45,7 @@
       "image": "/images/aamras.jpg",
       "description": "Refreshing with every sip",
       "items": [
-        { "name": "Warm Apple Crisp", "price": "₹ 220.00" },
-        { "name": "Strawberry Shortcake", "price": "₹ 220.00" },
-        { "name": "Chocolate Brownie Sundae", "price": "₹ 220.00" },
-        { "name": "Vanilla Bean Cheesecake", "price": "₹ 220.00" }
+        { "name": "Aamras - 250ml", "price": "₹ 220.00" }
       ]
     }
   },
