@@ -397,11 +397,22 @@
       padding: 12px 16px;
     }
 
+    .header h1 {
+      font-size: 1.3rem;
+    }
+
     .nav {
       gap: 16px;
     }
 
     .contact-link {
       font-size: 1rem;
+    }
+  }
+
+  /* Add an intermediate breakpoint for slightly larger phones */
+  @media (min-width: 481px) and (max-width: 600px) {
+    .header h1 {
+      font-size: 1.5rem;
     }
   }
