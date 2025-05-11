@@ -153,6 +153,16 @@
     margin-bottom: 16px;
   }
   
+  .location-detail a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .location-detail a:hover {
+    color: var(--accent-green);
+  }
+  
   .location-detail::after {
     content: "";
     position: absolute;
