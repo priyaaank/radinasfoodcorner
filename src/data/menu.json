@@ -5,18 +5,12 @@
       "image": "/images/bakesCategory.jpg",
       "description": "Sweet endings",
       "items": [
-        { "name": "Strawberry cheesecake - 1 slice", "price": "₹ 220.00" },
-        { "name": "Blueberry cheesecake - 1 slice", "price": "₹ 220.00" },
-        { "name": "Orange tea-cake - 1 slice", "price": "₹ 220.00" },
-        { "name": "Oatmeal cookies - 4 pieces", "price": "₹ 220.00" },
-        { "name": "Choco chunk cupcake - 1 piece", "price": "₹ 220.00" },
-        { "name": "Choco chunk cookies - 1 piece", "price": "₹ 220.00" },
-        { "name": "Dark chocolate brownie - 1 piece", "price": "₹ 220.00" },
-        { "name": "Coconut Chocolate Cookies", "price": "₹ 120.00" },
-        { "name": "Choco chip cupcake", "price": "₹ 220.00" },
-        { "name": "Almond biscotti", "price": "₹ 125.00" },
-        { "name": "Lemon Almond Bicotti", "price": "₹ 135.00" },
-        { "name": "Lemon biscotti", "price": "₹ 120.00" }
+        { "name": "Choco chunk cookies - 1 piece", "price": "₹ 130.00" },
+        { "name": "Banana Chocolate Muffins (1 pc)", "price": "₹ 130.00" },
+        { "name": "Almond biscotti (110 gms)", "price": "₹ 130.00" },
+        { "name": "Lemon Almond Bicotti (110 gms)", "price": "₹ 145.00" },
+        { "name": "Lemon biscotti (110 gms)", "price": "₹ 115.00" },
+        { "name": "Cranberry Almond biscotti (110 gms)", "price": "₹ 185.00" }
       ]
     },
     "snacks": {
