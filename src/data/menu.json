@@ -18,10 +18,10 @@
       "image": "/images/snackscategory.jpg",
       "description": "Perfect accompaniments",
       "items": [
-        { "name": "Vada Paav - 1 piece", "price": "₹ 220.00" },
-        { "name": "Sambarwadi - 2 pieces", "price": "₹ 220.00" },
+        { "name": "Vada Paav - 1 piece", "price": "₹ 75.00" },
+        { "name": "Sambarwadi - 2 pieces", "price": "₹ 120.00" },
         { "name": "Sabudana wada - 4 pieces", "price": "₹ 115.00" },
-        { "name": "Dabeli - 1 piece", "price": "₹ 105.00" }
+        { "name": "Dabeli - 1 piece", "price": "₹ 100.00" }
       ]
     },
     "streetfood": {
@@ -29,9 +29,7 @@
       "image": "/images/streetfoodcategory.jpg",
       "description": "Authentic savory taste",
       "items": [
-        { "name": "Mutton Keema Pav", "price": "₹ 220.00" },
-        { "name": "Paav Bhaji - 2 Pav", "price": "₹ 220.00" },
-        { "name": "Mutton Biryani", "price": "₹ 220.00" }
+        { "name": "Mutton Keema Pav", "price": "₹ 320.00" },
       ]
     },
     "beverages": {
@@ -39,7 +37,7 @@
       "image": "/images/aamras.jpg",
       "description": "Refreshing with every sip",
       "items": [
-        { "name": "Aamras - 250ml", "price": "₹ 220.00" }
+        { "name": "Aam Panna - 300 ml", "price": "₹ 75.00" }
       ]
     }
   },
