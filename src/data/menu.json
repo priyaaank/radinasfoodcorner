@@ -29,7 +29,7 @@
       "image": "/images/streetfoodcategory.jpg",
       "description": "Authentic savory taste",
       "items": [
-        { "name": "Mutton Keema Pav", "price": "₹ 320.00" },
+        { "name": "Mutton Keema Pav", "price": "₹ 320.00" }
       ]
     },
     "beverages": {
