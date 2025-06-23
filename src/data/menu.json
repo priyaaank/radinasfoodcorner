@@ -25,15 +25,16 @@
       ]
     },
     "streetfood": {
-      "displayName": "Street-Food",
+      "displayName": "Non-Veg Specials",
       "image": "/images/streetfoodcategory.jpg",
       "description": "Authentic savory taste",
       "items": [
         { "name": "Mutton Keema Pav", "price": "₹ 320.00" }
+        
       ]
     },
     "beverages": {
-      "displayName": "Beverages/Coolers",
+      "displayName": "Beverages/Coolers - Seasonal",
       "image": "/images/aamras.jpg",
       "description": "Refreshing with every sip",
       "items": [
@@ -44,7 +45,7 @@
   "otherImages": {
     "proteinplate": "/images/proteinplate.jpg",
     "biscotti": "/images/biscotti.jpg",
-    "biscotti2": "/images/biscotti2.jpg",
+    "biscotti2": "/images/Biscottis_Collage.jpg",
     "brownies": "/images/brownies.jpg",
     "darkChocolateBrownie": "/images/darkchocolatebrownie.jpg",
     "cookie": "/images/cookie.jpg",
