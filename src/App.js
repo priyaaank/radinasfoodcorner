@@ -18,6 +18,7 @@ function App() {
   const foodImages = [
     { src: menu.otherImages.dabeli, alt: "Dabeli", text: "Dabeli" },
     { src: menu.otherImages.oatmealCookie, alt: "Oatmeal Cookie", text: "Oatmeal Cookie" },
+    { src: menu.otherImages.cookie, alt: "ChocoChunk Cookie", text: "ChocoChunk Cookie" },
     { src: menu.otherImages.pavBhaji, alt: "Pav Bhaji", text: "Pav Bhaji" }
   ];
 
