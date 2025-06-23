@@ -18,14 +18,13 @@ function App() {
   const foodImages = [
     { src: menu.otherImages.dabeli, alt: "Dabeli", text: "Dabeli" },
     { src: menu.otherImages.oatmealCookie, alt: "Oatmeal Cookie", text: "Oatmeal Cookie" },
-    { src: menu.otherImages.springRolls, alt: "Spring Rolls", text: "Spring Rolls" },
     { src: menu.otherImages.pavBhaji, alt: "Pav Bhaji", text: "Pav Bhaji" }
   ];
 
   const dessertImages = [
     { src: menu.otherImages.strawberryCheesecake, alt: "Strawberry Cheesecake", text: "Strawberry Cheesecake" },
     { src: menu.otherImages.darkChocolateBrownie, alt: "Dark Chocolate Brownie", text: "Dark Chocolate Brownie" },
-    { src: menu.otherImages.biscotti, alt: "Biscotti", text: "Biscotti" },
+    { src: menu.otherImages.biscotti2, alt: "Biscotti", text: "Biscotti" },
     { src: menu.otherImages.cupcakes, alt: "Choco Chunk Cupcakes", text: "Choco Chunk Cupcakes" }
   ];
   
