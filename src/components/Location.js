@@ -16,7 +16,7 @@ export default function Location() {
       <a href="https://maps.app.goo.gl/EFLhhQF4Hf6q1hiY6" target="_blank" rel="noreferrer">HSR Layout, Bangalore</a>
       </div>
       <div className="location-detail">
-        <a href="mailto:hello@radinasfoodcorner.com">hello@radinasfoodcorner.com</a>
+        <a href="mailto:radinaaa@gmail.com">radinaaa@gmail.com</a>
       </div>
     </div>
   );
